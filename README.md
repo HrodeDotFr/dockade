@@ -53,15 +53,29 @@ et ne pas supprimer à la main le dossier du domaine
 
 ### Config
 
+**domain**
+Domaine sur lequel le container sera disponible
+(bien penser à faire la redirection dns vers l'ip du serveur)
+
+**port**
+Port d'écoute du serveur http
+
+**https**
+'on' pour activer le https, autre sinon
+
+**ports**
+Redirections de ports
+Sous la forme *port du serveur <-> port du container*
+
 Exemple
 ```json
 [
     {
-        "domain":"domaine.extension", // Faire la redirection dns vers l'ip du serveur
-        "port":80, // Port d'écoute du serveur http
-        "https":"on", // 'on' pour activer le https, autre sinon
-        "ports":{ // Redirections de ports
-           "9122":"22" // Port du serveur <-> port du container
+        "domain":"domaine.extension",
+        "port":80,
+        "https":"on",
+        "ports":{
+           "9122":"22"
         }
     },
     {
