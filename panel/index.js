@@ -174,7 +174,7 @@ async function reloadConfig() {
           }).then(() => { // Ports
             var configPorts = '';
             for (const portOut in proj.ports) {
-              configPorts += '0.0.0.0 '+portOut+' '+proj.ip+' '+proj.ports[portOut]+'\n';
+              configPorts += '0.0.0.0 '+portOut+' '+ip+' '+proj.ports[portOut]+'\n';
             }
             fs.appendFileSync(rinetdConfigPath, configPorts);
             resolve();
