@@ -35,21 +35,20 @@ pm2 start index.js
 
 ## Utilisation
 
-Pour créer des containers, il faut juste modifier le fichier de config (panel/config/dockade.json).
+- Pour créer des containers, il faut juste modifier le fichier de config (panel/config/dockade.json).
 Il est possible de modifier le fichier de config lorsque le serveur nodejs est lancé, il mettra à jour la configuration tout seul.
 
-Un nouveau container créé avec dockade aura pour identifiant ssh root et root.
+- Un nouveau container créé avec dockade aura pour identifiant ssh root et root.
 
-Pour activer le https sur un container
-```sh
-certbot certonly -n -a webroot --webroot-path /var/www/data/ -d {domaine.extension}
-```
+- Pour activer le https sur un container
+  ```sh
+  certbot certonly -n -a webroot --webroot-path /var/www/data/ -d {domaine.extension}
+  ```
 
-Pour supprimer un certificat (/etc/letsencrypt/live/), utiliser
-```sh
-certbot delete
-```
-et ne pas supprimer à la main le dossier du domaine
+- Pour supprimer un certificat (/etc/letsencrypt/live/), utiliser cette commande, et ne pas supprimer à la main le dossier du domaine
+  ```sh
+  certbot delete
+  ```
 
 ### Config
 
