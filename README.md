@@ -53,17 +53,17 @@ et ne pas supprimer à la main le dossier du domaine
 
 ### Config
 
-**domain**
+**domain**  
 Domaine sur lequel le container sera disponible
 (bien penser à faire la redirection dns vers l'ip du serveur)
 
-**port**
+**port**  
 Port d'écoute du serveur http
 
-**https**
+**https**  
 'on' pour activer le https, autre sinon
 
-**ports**
+**ports**  
 Redirections de ports
 Sous la forme *port du serveur <-> port du container*
 
