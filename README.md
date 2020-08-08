@@ -28,7 +28,7 @@ Lancer le serveur dans la console
 ```sh
 node index.js
 ```
-Lancer la console en fond
+Lancer le serveur en fond
 ```sh
 pm2 start index.js
 ```
@@ -40,7 +40,7 @@ Il est possible de modifier le fichier de config lorsque le serveur nodejs est l
 
 - Un nouveau container créé avec dockade aura pour identifiant ssh root et root.
 
-- Pour activer le https sur un container
+- Pour générer un certificat SSL pour un container (pour le https)
   ```sh
   certbot certonly -n -a webroot --webroot-path /var/www/data/ -d {domaine.extension}
   ```
